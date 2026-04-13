@@ -18,7 +18,7 @@ def index(): # função que gerencia rota
     
     return render_template("dashboard/index.html") # Renderiza um template
 
-@bp.route("/dashboard") # cria uma rota para navegador http://127.0.0.1:5000/dashboard
+@bp.route("/dashboard") # cria uma rota para navegador 
 def dashboard(): # função que gerencia rota deve ser única
     """ Painel de Vendas"""
     #  if 'user' not in session:  # garnate autenticação
