@@ -1,10 +1,12 @@
 {% extends 'layout.html' %}
+
 {%block page_header%}
-<script src="../assets/js/color-modes.js"></script>
-    <link href="/static/bootstrap-5.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="../assets/js/color-modes.js"></script>
+    <!-- <link href="/static/bootstrap-5.3.6/css/bootstrap.min.css" rel="stylesheet" /> -->
     <meta name="theme-color" content="#712cf9" />
-    <link href="dashboard.css" rel="stylesheet" />
+    <link href="/static/css/dashboard.css" rel="stylesheet" />
 {%endblock%}
+
 {%block page_style%}
     <style>
       .bd-placeholder-img {
@@ -80,7 +82,8 @@
         display: block !important;
       }
     </style>
-    {%endblock%}
+{%endblock%}
+
     {% block content %}
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -627,19 +630,15 @@
         </main>
       </div>
     </div>
-   
-    {%endblock%}
+{%endblock%}
+
 {%block page_js%}
-  <script
-      src="../assets/dist/js/bootstrap.bundle.min.js"
-      class="astro-vvvwv3sm"
-    ></script>
-    <script
+      <script
       src="https://cdn.jsdelivr.net/npm/chart.js@4.3.2/dist/chart.umd.js"
       integrity="sha384-eI7PSr3L1XLISH8JdDII5YN/njoSsxfbrkCTnJrzXt+ENP5MOVBxD+l6sEG4zoLp"
       crossorigin="anonymous"
       class="astro-vvvwv3sm"
     ></script>
-    <script src="dashboard.js" class="astro-vvvwv3sm"></script>
+    <script src="/static/css/dashboard.js" class="astro-vvvwv3sm"></script>
 {%endblock%}
  
