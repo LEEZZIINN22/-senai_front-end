@@ -9,8 +9,8 @@
     <tbody>
       {% for vendas in vendas %}
       <tr>
-        <td>{{vendas["mes"]}}</td>
-        <td>{{locale.currency(vendas["total"], grouping=True, symbol=True)}}</td>
+        <td>{{ vendas["mes"] }}</td>
+        <td>{{ locale.currency(vendas["total"], grouping=True, symbol=True) }}</td>
       </tr>
       {% endfor %}
     </tbody>
