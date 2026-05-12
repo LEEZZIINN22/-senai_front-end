@@ -1,18 +1,18 @@
 <div class="table-responsive small">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th scope="col">Mês</th>
-                  <th scope="col">Total de Vendas</th>
-                </tr>
-              </thead>
-              <tbody>
-                {% for vendas in vendas %}
-                <tr>
-                  <td>{{vendas["mês"]}}</td>
-                  <td>{{locale.currency(vendas["total"], grouping = True, symbol = True)}}</td>
-                </tr>
-                {% endfor %}
-              </tbody>
-            </table>
-          </div>
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th scope="col">Mês</th>
+        <th scope="col">Total de Vendas</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for vendas in vendas %}
+      <tr>
+        <td>{{vendas["mes"]}}</td>
+        <td>{{locale.currency(vendas["total"], grouping=True, symbol=True)}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

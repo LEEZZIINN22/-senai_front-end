@@ -23,27 +23,23 @@ def dashboard(): # função que gerencia rota deve ser única
     """ Painel de Vendas"""
     #  if 'user' not in session:  # garnate autenticação
     #       return redirect(url_for("auth.login"))
-
     import locale
+    # Define a localidade para português do Brasil
     locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
-
+    
     vendas: list = [
-        {"mês": "Janeiro" , "total" :139519.19},
-        {"mês": "fevereiro" , "total" :99519.19},
-        {"mês": "março" , "total" :149519.19},
-        {"mês": "abril" , "total" :179519.19},
-        {"mês": "maio" , "total" :199519.19},
-        {"mês": "junho" , "total" :259519.19},
-        {"mês": "julho" , "total" :509519.19},
-        {"mês": "agosto" , "total" :209519.19},
-        {"mês": "setembro" , "total" :129519.19},
-        {"mês": "outubro" , "total" :119519.19},
-        {"mês": "novembro" , "total" :109519.19},
-        {"mês": "dezembrO" , "total" :479519.19},
-
-
-     
-    ] # fim lista de vendas
-    return render_template("dashboard/index.html", title = "Painel de Vendas", vendas = vendas, locale = locale ) 
-# Renderiza um template
-
+        {"mes":"Janeiro", "total": 128742.36},
+        {"mes":"Fevereiro", "total": 18452.91},
+        {"mes":"Março", "total": 13210.74},
+        {"mes":"Abril", "total": 9754.28},
+        {"mes":"Maio", "total": 14123.67},
+        {"mes":"Junho", "total": 8631.42},
+        {"mes":"Julho", "total": 10458.93},
+        {"mes":"Agosto", "total": 12387.15},
+        {"mes":"Setembro", "total": 13776.48},
+        {"mes":"Outubro", "total": 14992.31},
+        {"mes":"Novembro", "total": 11754.66},
+        {"mes":"Dezembro", "total": 16840.27}
+    ] # fim da lista de vendas
+    
+    return render_template("dashboard/index.html", title = "Painel de Vendas", vendas = vendas, locale = locale) # Renderiza um template
