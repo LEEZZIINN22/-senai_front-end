@@ -75,3 +75,4 @@ def init_db_command():
 
 if __name__ == "__main__": # 'função principal' do python
     create_app().run(debug=True, host="0.0.0.0") # executa o flask na porta http://127.0.0.1:5000
+    

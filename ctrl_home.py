@@ -15,10 +15,10 @@ def index(): # função que gerencia rota
     """ Página inicial"""
     if '_user_id' not in session:
         return redirect(url_for("auth.login"))
-    
+   
     return render_template("dashboard/index.html") # Renderiza um template
 
-@bp.route("/dashboard") # cria uma rota para navegador 
+@bp.route("/dashboard") # cria uma rota para navegador http://127.0.0.1:5000/dashboard
 def dashboard(): # função que gerencia rota deve ser única
     """ Painel de Vendas"""
     #  if 'user' not in session:  # garnate autenticação
